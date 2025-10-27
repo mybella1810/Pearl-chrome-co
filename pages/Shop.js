@@ -10,7 +10,7 @@ export default function Shop() {
       <main className="main-content">
         <h1>Shop Collection</h1>
         <div className="product-grid">
-          {sampleData.products.map((item) => (
+          {sampleData.map((item) => (
             <ProductCard key={item.id} product={item} />
           ))}
         </div>
