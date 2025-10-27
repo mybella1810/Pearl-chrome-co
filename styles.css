@@ -1,0 +1,10 @@
+:root{
+  --bg:#f7f9fb;
+  --accent:#0b79ff;
+  --muted:#6b7280;
+}
+html,body,#__next{height:100%}
+body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:#0f1724}
+a{color:var(--accent);text-decoration:none}
+.container{max-width:1100px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}

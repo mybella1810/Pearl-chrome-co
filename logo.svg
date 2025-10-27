@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#cfd8dc"/>
+      <stop offset="1" stop-color="#90a4ae"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="200" fill="#0f1724"/>
+  <g transform="translate(40,30)">
+    <rect x="0" y="0" width="160" height="140" rx="12" fill="url(#g)"/>
+    <text x="190" y="70" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#e6eef6">Pearl &amp; Chrome Co.</text>
+    <text x="190" y="110" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#9fb5c9">Premium Auto Body Parts & Custom Paint Matching</text>
+  </g>
+</svg>
