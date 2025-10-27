@@ -1,49 +1,35 @@
-{
-  "products": [
-    {
-      "id": 1,
-      "name": "Front Bumper Cover",
-      "category": "Body",
-      "price": 199.99,
-      "fits": [
-        {
-          "year": 2020,
-          "make": "Toyota",
-          "model": "Camry",
-          "submodel": "LE"
-        }
-      ],
-      "paint_codes": ["PXR", "U091"]
-    },
-    {
-      "id": 2,
-      "name": "Rear Quarter Panel",
-      "category": "Body",
-      "price": 349.99,
-      "fits": [
-        {
-          "year": 2019,
-          "make": "Honda",
-          "model": "Civic",
-          "submodel": "EX"
-        }
-      ],
-      "paint_codes": ["G1", "B5"]
-    },
-    {
-      "id": 3,
-      "name": "Side Mirror (Left)",
-      "category": "Accessories",
-      "price": 49.99,
-      "fits": [
-        {
-          "year": 2021,
-          "make": "Nissan",
-          "model": "Altima",
-          "submodel": "S"
-        }
-      ],
-      "paint_codes": ["K23"]
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "name": "Front Bumper Cover",
+    "category": "Body",
+    "price": 199.99,
+    "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
+    "fits": [
+      { "year": 2020, "make": "Toyota", "model": "Camry", "submodel": "LE" }
+    ],
+    "paint_codes": ["PXR", "U091"]
+  },
+  {
+    "id": 2,
+    "name": "Rear Quarter Panel",
+    "category": "Body",
+    "price": 349.99,
+    "image": "https://images.unsplash.com/photo-1571607381745-00a53035c2b9",
+    "fits": [
+      { "year": 2019, "make": "Honda", "model": "Civic", "submodel": "EX" }
+    ],
+    "paint_codes": ["G1", "B5"]
+  },
+  {
+    "id": 3,
+    "name": "Side Mirror (Left)",
+    "category": "Accessories",
+    "price": 49.99,
+    "image": "https://images.unsplash.com/photo-1610395219799-950d6c159b3d",
+    "fits": [
+      { "year": 2021, "make": "Nissan", "model": "Altima", "submodel": "SL" }
+    ],
+    "paint_codes": ["KH3"]
+  }
+]
