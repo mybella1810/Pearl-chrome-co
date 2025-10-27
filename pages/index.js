@@ -3,7 +3,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProductCard from "../components/ProductCard";
 import sampleData from "../sample-data.json";
-import styles from "../styles/styles.css";
 
 export default function Home() {
   return (
