@@ -1,65 +1,49 @@
-[
-  {
-    "id": 1,
-    "name": "Front Bumper Cover",
-    "category": "Body",
-    "price": 199.99,
-    "fits": [
-      {
-        "year": 2020,
-        "make": "Toyota",
-        "model": "Camry",
-        "submodel": "LE"
-      }
-    ],
-    "paint_codes": [
-      "PXR",
-      "U091"
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Rear Quarter Panel",
-    "category": "Body",
-    "price": 349.99,
-    "fits": [
-      {
-        "year": 2019,
-        "make": "Honda",
-        "model": "Civic",
-        "submodel": "EX"
-      }
-    ],
-    "paint_codes": [
-      "G1",
-      "B5"
-    ]
-  },
-  {
-    "id": 3,
-    "name": "Side Mirror (Left)",
-    "category": "Accessories",
-    "price": 49.99,
-    "fits": [
-      {
-        "year": 2020,
-        "make": "Toyota",
-        "model": "Camry",
-        "submodel": "LE"
-      }
-    ],
-    "paint_codes": []
-  },
-  {
-    "id": 4,
-    "name": "Premium Paint Can (1L)",
-    "category": "Paint",
-    "price": 79.99,
-    "fits": [],
-    "paint_codes": [
-      "PXR",
-      "G1",
-      "U091"
-    ]
-  }
-]
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Front Bumper Cover",
+      "category": "Body",
+      "price": 199.99,
+      "fits": [
+        {
+          "year": 2020,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "LE"
+        }
+      ],
+      "paint_codes": ["PXR", "U091"]
+    },
+    {
+      "id": 2,
+      "name": "Rear Quarter Panel",
+      "category": "Body",
+      "price": 349.99,
+      "fits": [
+        {
+          "year": 2019,
+          "make": "Honda",
+          "model": "Civic",
+          "submodel": "EX"
+        }
+      ],
+      "paint_codes": ["G1", "B5"]
+    },
+    {
+      "id": 3,
+      "name": "Side Mirror (Left)",
+      "category": "Accessories",
+      "price": 49.99,
+      "fits": [
+        {
+          "year": 2021,
+          "make": "Nissan",
+          "model": "Altima",
+          "submodel": "S"
+        }
+      ],
+      "paint_codes": ["K23"]
+    }
+  ]
+}
