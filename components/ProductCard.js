@@ -4,7 +4,18 @@ export default function ProductCard({ product }) {
       <img src={product.image} alt={product.name} />
       <h3>{product.name}</h3>
       <p className="price">${product.price.toFixed(2)}</p>
-      <button className="add-to-cart">Add to Cart</button>
+
+      <button
+        onClick={() => {
+          const currentCart = JSON.parse(localStorage.getItem("cart")) || [];
+          currentCart.push(product);
+          localStorage.setItem("cart", JSON.stringify(currentCart));
+          alert(`${product.name} added to cart!`);
+        }}
+        className="add-to-cart"
+      >
+        Add to Cart
+      </button>
 
       <style jsx>{`
         .product-card {
@@ -42,19 +53,17 @@ export default function ProductCard({ product }) {
         }
 
         .add-to-cart {
-          background: linear-gradient(135deg, #d8d8d8, #b0b0b0);
-          color: #222;
-          font-weight: 600;
+          background: linear-gradient(135deg, #8d8d8d, #b0b0b0);
+          color: white;
           border: none;
-          border-radius: 8px;
           padding: 0.6rem 1.2rem;
+          border-radius: 8px;
           cursor: pointer;
-          transition: all 0.2s ease;
+          transition: background 0.3s ease;
         }
 
         .add-to-cart:hover {
-          background: linear-gradient(135deg, #cfcfcf, #999);
-          color: #000;
+          background: linear-gradient(135deg, #7a7a7a, #999);
         }
       `}</style>
     </div>
