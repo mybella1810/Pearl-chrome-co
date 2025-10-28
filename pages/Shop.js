@@ -4,6 +4,11 @@ import ProductCard from "../components/ProductCard";
 import sampleData from "../sample-data.json";
 
 export default function Shop() {
+  // Make sure we’re working with an array
+  const products = Array.isArray(sampleData)
+    ? sampleData
+    : sampleData.products || [];
+
   return (
     <div>
       <Header />
@@ -11,9 +16,13 @@ export default function Shop() {
         <h1 className="shop-title">Shop Collection</h1>
 
         <div className="product-grid">
-          {sampleData.map((item) => (
-            <ProductCard key={item.id} product={item} />
-          ))}
+          {products.length > 0 ? (
+            products.map((item) => (
+              <ProductCard key={item.id} product={item} />
+            ))
+          ) : (
+            <p>No products found.</p>
+          )}
         </div>
       </main>
       <Footer />
@@ -51,8 +60,8 @@ export default function Shop() {
         }
 
         .product-grid :global(.product-card:hover) {
-          transform: translateY(-4px);
-          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+          transform: translateY(-5px);
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
         }
       `}</style>
     </div>
