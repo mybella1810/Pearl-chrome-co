@@ -21,7 +21,7 @@ export default function Cart() {
   return (
     <div>
       <Header />
-      <main className="main-content" style={{ textAlign: "center", padding: "20px" }}>
+      <main style={{ textAlign: "center", padding: "20px" }}>
         <h1>Your Cart</h1>
         {cartItems.length === 0 ? (
           <p>Your cart is empty.</p>
@@ -32,27 +32,33 @@ export default function Cart() {
                 key={item.id}
                 style={{
                   border: "1px solid #ccc",
-                  borderRadius: "8px",
+                  borderRadius: "10px",
                   padding: "10px",
                   margin: "10px auto",
-                  width: "250px",
+                  width: "260px",
+                  background: "#fff",
+                  boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
                 }}
               >
                 <img
                   src={item.image}
                   alt={item.name}
-                  style={{ width: "100%", borderRadius: "8px" }}
+                  style={{
+                    width: "100%",
+                    borderRadius: "8px",
+                    marginBottom: "10px",
+                  }}
                 />
                 <h3>{item.name}</h3>
                 <p>${item.price.toFixed(2)}</p>
                 <button
                   onClick={() => removeFromCart(item.id)}
                   style={{
-                    backgroundColor: "#900",
+                    backgroundColor: "#a00",
                     color: "#fff",
                     border: "none",
+                    borderRadius: "6px",
                     padding: "8px 12px",
-                    borderRadius: "5px",
                     cursor: "pointer",
                   }}
                 >
@@ -67,4 +73,4 @@ export default function Cart() {
       <Footer />
     </div>
   );
-}
+                    }
